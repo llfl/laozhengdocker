@@ -113,6 +113,8 @@ RUN set -eux; \
 
 ADD ARCameraService /usr/local/tomcat/webapps/、ARCameraService
 
+RUN mkdir -p /tmp/arcam
+
 # verify Tomcat Native is working properly
 RUN set -e \
 	&& nativeLines="$(catalina.sh configtest 2>&1)" \

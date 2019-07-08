@@ -111,7 +111,7 @@ RUN set -eux; \
 	chmod -R +rX .; \
 	chmod 777 logs work
 
-ADD ARCameraService "$CATALINA_HOME"\ARCameraService
+ADD ARCameraService /usr/local/tomcat/webapps/、ARCameraService
 
 # verify Tomcat Native is working properly
 RUN set -e \
